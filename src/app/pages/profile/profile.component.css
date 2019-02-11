@@ -2,8 +2,9 @@
 .profile{
     width: 100%;
     display: flex;
-    direction: initial;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 /* 
 ajusta o navbar no centro da pagina e empura a classe informationProfile para baixo 2% */
@@ -17,8 +18,8 @@ ajusta o navbar no centro da pagina e empura a classe informationProfile para ba
 .imageProfile{
 
     display: flex;
-    margin: 4% 0% 0% 17%;
-    width: 14%;
+    margin: 3% 0% 0% 0%;
+    width: 26%;
     height: 10%;
 }
 
@@ -35,9 +36,36 @@ ajusta o navbar no centro da pagina e empura a classe informationProfile para ba
 .profile-chield{
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
 }
 
 .name{
     display: flex;
     align-items: baseline;
+}
+
+.list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    /* flex-direction: column; */
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.list-group[_ngcontent-c1] {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+p {
+    /* margin-top: 0; */
+    margin-bottom: 2%;
+    font-size: -webkit-xxx-large;
 }

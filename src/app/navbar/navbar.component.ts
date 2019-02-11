@@ -14,8 +14,8 @@ export class NavbarComponent implements OnInit {
 
   }
 
-  navigateT(rota: string): void{
-    this.router.navigateByUrl('profile')
-  }
+  // navigateT(rota: string): void{
+  //   this.router.navigateByUrl('profile')
+  // }
 
 }
