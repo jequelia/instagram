@@ -1,49 +1,144 @@
-/* flex-pai, definindo largura, inicio da posição e como ele deve se comportar: coluna */
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.navbar1{
+    width: 100%;
+}
+
+.bg-light {
+    background-color: #ffffff!important;
+}
+
 .profile{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: 3%;
+}
+
+.profile-chield {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imageProfile{
+    margin-right: 50px;
+}
+
+.story1{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.circle{
+    background: #f8f9fa;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publications1{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.publication{
+    width: 298px;
+    height: 293px;
+    background: #e9ecef;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30%;
+}
+/* flex-pai, definindo largura, inicio da posição e como ele deve se comportar: coluna */
+/* .profile{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-}
+} */
 /* 
 ajusta o navbar no centro da pagina e empura a classe informationProfile para baixo 2% */
-.navbar1{
+/* .navbar1{
     display: flex;
     direction: initial;
     flex-direction: column;
-    margin-bottom: 2%;}
+    margin-bottom: 2%;
+} */
 
 /* ajusta a imagem para o centro */
-.imageProfile{
+/* .imageProfile{
 
     display: flex;
     margin: 3% 0% 0% 0%;
     width: 26%;
     height: 10%;
-}
+} */
 
 /* deixa a imagem redonda */
 #perfilfake{
 
     border-radius: 50%;
-    width: 190px;
-    height: 190px;
-    border-style: ridge;
+    width: 163px;
+    height: 161px;
+    /* border-style: ridge; */
     padding: 3px;
 }
 
-.profile-chield{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+#config{
+    width: 15%;
+    height: 10%;
+    margin: 5px;
 }
+
+.btn[_ngcontent-c1]:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    /* padding: 0px; */
+    margin: 10px;
+}
+
+#temaki{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 3px;
+}
+
+#temaki1{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 3px;
+    border: solid 1px gray;
+}
+
 
 .name{
     display: flex;
     align-items: baseline;
+    align-items: center;
 }
 
 .list-group {
@@ -65,7 +160,28 @@ ajusta o navbar no centro da pagina e empura a classe informationProfile para ba
 }
 
 p {
-    /* margin-top: 0; */
     margin-bottom: 2%;
-    font-size: -webkit-xxx-large;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+a {
+    color: #656b71;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#epica{
+    vertical-align: middle;
+    border-style: none;
+    width: 99%;
+    height: 100%;
+}
+
+img{  
+     vertical-align: middle;
+     border-style: none;
+     width: 104%;
+     height: 50%;
+  
 }

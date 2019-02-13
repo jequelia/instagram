@@ -1,65 +1,98 @@
-<div class="navbar1">
+<div class="flex">
 
-  <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="../assets/logo1.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-      Instagram
-    </a>
-  </nav>
-
-</div>
-
-<div class="profile">
-  
-
-  <div class="imageProfile">
-
-    <img id="perfilfake" src="../assets/perfil1.jpg" alt="perfil">
-
+  <div class="navbar1">
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/logoinsta.png" height="30" class="d-inline-block align-top" alt="">
+       
+      </a>
+    </nav>
   </div>
 
-  <div class="profile-chield">
+  <div class="profile">
+    <div class="imageProfile">
+      <img id="perfilfake" src="../assets/merlia.jpg" alt="perfil">
+    </div>
 
+    <div class="profile-chield">
+      <div class="informationProfile">
+        <div class="name">
+          <p>Merlia Faustino</p>
+          <button type="submit" class="btn btn-outline-dark">Editar pefil</button>
+          <span> <img id="config" src="../assets/settings.svg" alt="config"></span>
+        </div>
 
-
-    <div class="informationProfile">
-
-      <div class="name">
-
-        <p>Fulano Sicrano</p>
-
-        <button type="submit" class="btn">Seguir</button>
-        <button type="submit" class="btn">opções</button>
-
+        <div class="list">
+          <ul class="list-group list-group-horizontal-xl">
+            <li> <a href="#publications">
+                <span>6 Publicações</span>
+              </a> </li>
+            <li> <a href="#">
+                <span>500 seguidores </span>
+              </a> </li>
+            <li> <a href="#">
+                <span>Seguindo 200</span>
+              </a> </li>
+          </ul>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <div class="list">
+  <div class="story1">
+    <div class="circle">
+      <img id="temaki" src="../assets/circle1.png" alt="adicionar">
+    </div>
 
-        <ul class="list-group list-group-horizontal-xl">
-          <li>Publicações </li>
-          <li>seguidores </li>
-          <li>Seguindo </li>
-        </ul>
+    <div class="circle">
+      <img id="temaki1" src="../../assets/perfil.png" alt="story">
+    </div>
 
-      </div>
+    <div class="circle">
+      <img id="temaki1" src="../../assets/foto1.jpg" alt="story">
+    </div>
+
+    <div class="circle">
+      <img id="temaki1" src="../../assets/foto2.jpg" alt="story">
+    </div>
+
+    <div class="circle">
+      <img id="temaki1" src="../../assets/foto3.jpg" alt="story">
+    </div>
+  </div>
+
+  <div id="publications" class="publications1">
+
+    <div class="publication">
+      <img id="epica" src="../assets/epica.jpg" alt="">
+
+    </div>
+
+    <div class="publication">
+        <img id="epica" src="../assets/epica2.jpg" alt="">
+
+    </div>
+
+    <div class="publication">
+        <img id="epica" id="epica" src="../assets/epica3.jpg" alt="">
+
+    </div>
+
+    <div class="publication">
+        <img id="epica" src="../assets/epica4.jpg" alt="">
+
+    </div>
+
+    <div class="publication">
+        <img id="epica" src="../assets/epica5.jpg" alt="">
+
+    </div>
+
+    <div class="publication">
+        <img id="epica" src="../assets/epica6.jpg" alt="">
 
     </div>
 
   </div>
-
-  
-  <div class="story">
-
-      <div class="story1" *ngFor="let item of itens">
-
-          <img id="temaki" src="../../assets/perfil.jpg" alt="story">
-      
-          <p>{{item.foto}}</p>
-          <p><button class="btn btn-primary" type="submit" (click)="add">Adicionar</button></p>
-      
-        </div>
-
-  </div>
-
 
 </div>
