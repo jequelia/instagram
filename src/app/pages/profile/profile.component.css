@@ -1,3 +1,4 @@
+/* propiedades para organizar todos containers na pagina */
 .flex {
     display: flex;
     flex-direction: column;
@@ -7,15 +8,16 @@
     align-items: center;
     background: #f8f9fa;
 }
-
+/* style navbar */
 .navbar1{
     width: 100%;
 }
-
+/* style navbar */
 .bg-light {
     background-color: #ffffff!important;
 }
 
+/* filha do flex */
 .profile{
     display: flex;
     justify-content: center;
@@ -23,6 +25,7 @@
     margin: 3%;
 }
 
+/* classe filha do profile organizando em containers o nome do perfil, informações de seguidores e quantidade de publicações  */
 .profile-chield {
     display: flex;
     align-items: center;
@@ -30,10 +33,63 @@
     justify-content: space-evenly;
 }
 
+/* class do container da foto do perfil */
 .imageProfile{
     margin-right: 50px;
 }
 
+/* id da foto do perfil */
+#perfilfake{
+
+    border-radius: 50%;
+    width: 163px;
+    height: 161px;
+    padding: 3px;
+}
+
+/* classe que organiza o nome do perfil, botão de editar perfil e span da ferramenta config */
+.name{
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+}
+
+/* style do nome do usuário */
+p {
+    margin-bottom: 2%;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.btn[_ngcontent-c1]:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    margin: 10px;
+}
+
+#config{
+    width: 15%;
+    height: 10%;
+    margin: 5px;
+}
+
+/* muda a cor dos nomes: publicações, seguidores e seguindo */
+a {
+    color: #656b71;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* style da lista */
+.list-group[_ngcontent-c1] {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* organiza o container dos storys */
 .story1{
     display: flex;
     width: 60%;
@@ -42,6 +98,24 @@
     justify-content: flex-start;
 }
 
+/* id de cada boloco story */
+#story[_ngcontent-c1] {
+    border-radius: 50%;
+    width: 101px;
+    height: 100px;
+    padding: 3px;
+}
+
+/* id da entranda de imagens do story */
+#storyInput{
+
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    padding: 1px;
+}
+
+/* classe flex-box para centralizar as imagens dentro do circulo do story */
 .circle{
     background: #f8f9fa;
     width: 100px;
@@ -51,16 +125,51 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-style: solid;
+    border-color: #dce1e8;
 }
 
+.h3, h3 {
+    font-size: 1.75rem;
+    font-size: -webkit-xxx-large;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgba(99, 97, 97, 0.9);
+}
+
+/* entrada da imagem file */
+input[type="file"] {
+    display: none;
+}
+
+/* customizando a entrada do arquivo */
+.custom-file-upload[_ngcontent-c1] {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 14px 34px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 11%;
+    height: 70px;
+    margin: 1px;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* style do container que organiza as publicações do usuário*/
 .publications1{
     width: 75%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
+/* style especifica dos containers de cada imagem */
 .publication{
     width: 298px;
     height: 293px;
@@ -71,106 +180,8 @@
     justify-content: center;
     max-width: 30%;
 }
-/* flex-pai, definindo largura, inicio da posição e como ele deve se comportar: coluna */
-/* .profile{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-} */
-/* 
-ajusta o navbar no centro da pagina e empura a classe informationProfile para baixo 2% */
-/* .navbar1{
-    display: flex;
-    direction: initial;
-    flex-direction: column;
-    margin-bottom: 2%;
-} */
 
-/* ajusta a imagem para o centro */
-/* .imageProfile{
-
-    display: flex;
-    margin: 3% 0% 0% 0%;
-    width: 26%;
-    height: 10%;
-} */
-
-/* deixa a imagem redonda */
-#perfilfake{
-
-    border-radius: 50%;
-    width: 163px;
-    height: 161px;
-    /* border-style: ridge; */
-    padding: 3px;
-}
-
-#config{
-    width: 15%;
-    height: 10%;
-    margin: 5px;
-}
-
-.btn[_ngcontent-c1]:not(:disabled):not(.disabled) {
-    cursor: pointer;
-    /* padding: 0px; */
-    margin: 10px;
-}
-
-#temaki{
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    padding: 3px;
-}
-
-#temaki1{
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    padding: 3px;
-    border: solid 1px gray;
-}
-
-
-.name{
-    display: flex;
-    align-items: baseline;
-    align-items: center;
-}
-
-.list-group {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    /* flex-direction: column; */
-    padding-left: 0;
-    margin-bottom: 0;
-}
-
-.list-group[_ngcontent-c1] {
-    display: flex;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-p {
-    margin-bottom: 2%;
-    font-size: 50px;
-    font-weight: 100;
-}
-
-a {
-    color: #656b71;
-    text-decoration: none;
-    background-color: transparent;
-}
-
+/* deixando no formato certo as fotos utilizadas como publicações */
 #epica{
     vertical-align: middle;
     border-style: none;
@@ -179,9 +190,9 @@ a {
 }
 
 img{  
-     vertical-align: middle;
-     border-style: none;
-     width: 104%;
-     height: 50%;
-  
+    vertical-align: middle;
+    border-style: none;
+    width: 104%;
+    height: 50%;
 }
+
