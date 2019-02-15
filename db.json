@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "email": "admm@adm",
+      "nomeCompleto": "admmm",
+      "nomeUsuario": "admmm",
+      "senha": "123456",
+      "id": ""
+    },
+    {
+      "email": "adm@adm",
+      "nomeCompleto": "jeque lia",
+      "nomeUsuario": "sssssss",
+      "senha": "444444444444444444",
+      "id": "hMyKPd_"
+    },
+    {
+      "email": "lucas@maciel.com",
+      "nomeCompleto": "Lucas Maciel Gomes",
+      "nomeUsuario": "Lucas",
+      "senha": "lucas123",
+      "id": "zexJ4zT"
+    }
+  ]
+}

@@ -101,9 +101,9 @@ a {
 /* id de cada boloco story */
 #story[_ngcontent-c1] {
     border-radius: 50%;
-    width: 101px;
+    width: 100px;
     height: 100px;
-    padding: 3px;
+    padding: 0.2px;
 }
 
 /* id da entranda de imagens do story */

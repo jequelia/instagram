@@ -1,0 +1,77 @@
+.flex{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 466px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    flex-direction: column;
+}
+
+.h4, h4 {
+    font-size: 1.5rem;
+    margin-bottom: 8%;
+}
+
+.image{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 40%;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.img1{
+   
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* customizando a entrada do arquivo */
+.custom-file-upload[_ngcontent-c1] {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 14px 34px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 11%;
+    height: 70px;
+    margin: 1px;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 50%;
+    height: 30%;
+}
+
+.names{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 40%;
+    height: 200px; */
+
+}
