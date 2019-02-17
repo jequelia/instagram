@@ -133,7 +133,7 @@ p{
     .login {
         display: flex;
         background: #fff;
-        width: 44%;
+        width: 46%;
         height: 11%;
         align-items: center;
         justify-content: center;
@@ -145,7 +145,7 @@ p{
     .cadastro {
         display: flex;
         background: #fff;
-        width: 44%;
+        width: 46%;
         height: 58%;
         align-items: center;
         justify-content: center;
@@ -154,3 +154,39 @@ p{
         flex-direction: column;
     }
   }
+
+  @media screen and (max-width: 416px) {
+    div.img1 {
+      display: none;
+    }
+
+    .login {
+        display: flex;
+        background: #fff;
+        width: 91%;
+        height: 11%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e6e6e6;
+        position: absolute;
+        margin: 74% 0% 0% 0%;
+    }
+
+    .h6, h6 {
+        font-size: 15px;
+        margin-bottom: 11px;
+        color: #949698;
+    }
+
+    .cadastro {
+        display: flex;
+    background: #fff;
+    width: 91%;
+    height: 69%;
+    align-items: center;
+    justify-content: center;
+    margin: -21% 0% 0% 0%;
+    border: 1px solid #e6e6e6;
+    flex-direction: column;
+    }
+ }
