@@ -7,7 +7,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
-import { HomeComponent } from './home/home.component';
+
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
@@ -22,7 +22,6 @@ import { EditProfileComponent } from './pages/edit-profile/edit-profile.componen
     NavbarComponent,
     LoginComponent,
     CadastroComponent,
-    HomeComponent,
     EditProfileComponent,
     
   ],

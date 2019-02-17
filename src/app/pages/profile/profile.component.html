@@ -1,28 +1,28 @@
 <!-- classe pai -->
 <div class="flex">
-<!-- codigo do navbar bootstrap -->
+  <!-- codigo do navbar bootstrap -->
   <div class="navbar1">
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" >
         <img src="../assets/logoinsta.png" height="30" class="d-inline-block align-top" alt="">
-
       </a>
+      <button type="submit" (click)="exit()" class="btn btn-outline-dark" >Sair</button>
     </nav>
   </div>
-<!-- Classe filha do flex responsável por organizar em containers classes da foto do perfil, nome do usuário, seguidores, story e fotos do usuários. -->
+  <!-- Classe filha do flex responsável por organizar em containers classes da foto do perfil, nome do usuário, seguidores, story e fotos do usuários. -->
   <div class="profile">
 
     <div class="imageProfile">
       <img id="perfilfake" src="../assets/merlia.jpg" alt="perfil">
     </div>
-<!-- classe filha do profile organizando em containers o nome do perfil, informações de seguidores e quantidade de publicações -->
+    <!-- classe filha do profile organizando em containers o nome do perfil, informações de seguidores e quantidade de publicações -->
     <div class="profile-chield">
 
       <div class="informationProfile">
 
         <div class="name">
           <p>Merlia Faustino</p>
-          <button type="submit" (click) = "click()" class="btn btn-outline-dark">Editar pefil</button>
+          <button type="submit" (click)="click()" class="btn btn-outline-dark">Editar pefil</button>
           <span> <img id="config" src="../assets/settings.svg" alt="config"></span>
         </div>
 
@@ -31,11 +31,11 @@
             <li> <a href="#publications">
                 <span>6 Publicações</span>
               </a> </li>
-            <li> <a href="#">
-                <span>500 seguidores </span>
+            <li> <a>
+                <span>0 seguidores </span>
               </a> </li>
-            <li> <a href="#">
-                <span>Seguindo 200</span>
+            <li> <a>
+                <span>Seguindo 0</span>
               </a> </li>
           </ul>
         </div>
@@ -43,60 +43,50 @@
       </div>
     </div>
   </div>
-<!-- Classe que organiza os blocos dos stroys -->
+  <!-- Classe que organiza os blocos dos stroys -->
   <div class="story1">
-    
-    <div class="circle">
+
+    <!-- classe que guia o usuário ao modal onde possa inserir link de imagens para por no storys -->
+    <div class="circle" data-toggle="modal" data-target="#exampleModal">
       <label for="file-upload" class="custom-file-upload">
         <h3>+</h3>
       </label>
-      <input id="file-upload" type="file" />
     </div>
 
-    <div class="circle" >
-      <img id="story" src="../../assets/perfil.png" alt="story">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Coloque um link de imagem para adicionar um novo story</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input [(ngModel)]="post.image" type="text">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">fechar</button>
+            <button type="submit" (click)="savePost()" class="btn btn-primary">Salvar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="circle">
-      <img id="story" src="../../assets/foto1.jpg" alt="story">
-    </div>
-
-    <div class="circle">
-      <img id="story" src="../../assets/foto2.jpg" alt="story">
-    </div>
-
-    <div class="circle">
-      <img id="story" src="../../assets/foto3.jpg" alt="story">
+    <div class="circle" *ngFor=" let story2  of storys">
+      <img id="story" [src]="story2" alt="story">
     </div>
 
   </div>
-<!-- Classe que organiza os blocos das publicações-->
+
+  <!-- Classe que organiza os blocos das publicações-->
   <div id="publications" class="publications1">
 
-    <div class="publication">
-      <img id="epica" src="../assets/epica.jpg" alt="">
-    </div>
-
-    <div class="publication">
-      <img id="epica" src="../assets/epica2.jpg" alt="">
-    </div>
-
-    <div class="publication">
-      <img id="epica" id="epica" src="../assets/epica3.jpg" alt="">
-    </div>
-
-    <div class="publication">
-      <img id="epica" src="../assets/epica4.jpg" alt="">
-    </div>
-
-    <div class="publication">
-      <img id="epica" src="../assets/epica5.jpg" alt="">
-    </div>
-
-    <div class="publication">
-      <img id="epica" src="../assets/epica6.jpg" alt="">
+    <div class="publication" *ngFor="let image of images">
+      <img id="epica" [src]="image" alt="">
     </div>
 
   </div>
-
 </div>

@@ -21,7 +21,7 @@
 .profile{
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 60rem;
     margin: 3%;
 }
 
@@ -61,7 +61,7 @@ p {
     font-weight: 100;
 }
 
-.btn[_ngcontent-c1]:not(:disabled):not(.disabled) {
+.btn:not(:disabled):not(.disabled) {
     cursor: pointer;
     margin: 10px;
 }
@@ -80,7 +80,7 @@ a {
 }
 
 /* style da lista */
-.list-group[_ngcontent-c1] {
+.list-group{
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
@@ -99,7 +99,7 @@ a {
 }
 
 /* id de cada boloco story */
-#story[_ngcontent-c1] {
+#story {
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -127,6 +127,7 @@ a {
     justify-content: center;
     border-style: solid;
     border-color: #dce1e8;
+    overflow: hidden;
 }
 
 .h3, h3 {
@@ -145,7 +146,7 @@ input[type="file"] {
 }
 
 /* customizando a entrada do arquivo */
-.custom-file-upload[_ngcontent-c1] {
+.custom-file-upload {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 14px 34px;
@@ -178,14 +179,14 @@ input[type="file"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 30%;
+    overflow: hidden;
 }
 
 /* deixando no formato certo as fotos utilizadas como publicações */
 #epica{
     vertical-align: middle;
     border-style: none;
-    width: 99%;
+    width: 100%;
     height: 100%;
 }
 

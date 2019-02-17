@@ -124,3 +124,33 @@ p{
     position: relative;
     top: .45em;
 }
+
+@media screen and (max-width: 1216px) {
+    div.img1 {
+      display: none;
+    }
+
+    .login {
+        display: flex;
+        background: #fff;
+        width: 44%;
+        height: 11%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e6e6e6;
+        position: absolute;
+        margin: 33% 0% 0% 0%;
+    }
+
+    .cadastro {
+        display: flex;
+        background: #fff;
+        width: 44%;
+        height: 58%;
+        align-items: center;
+        justify-content: center;
+        margin: -11% 0% 0% 5%;
+        border: 1px solid #e6e6e6;
+        flex-direction: column;
+    }
+  }
