@@ -10,6 +10,11 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+
+  /* TODO : Documentar os métodos
+      TODO : HTML, classes e ids todos em inglês e nomes genéricos
+  */
+
   loginForm: FormGroup
   viewAlert: boolean = false
 

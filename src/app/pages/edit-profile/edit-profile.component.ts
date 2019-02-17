@@ -8,6 +8,13 @@ import { Router } from '@angular/router';
 })
 export class EditProfileComponent implements OnInit {
 
+
+  /* TODO : Implementar lógica de editar
+    TODO : Documentação de métodos
+      TODO : HTML, classes e ids todos em inglês e nomes genéricos
+  */
+
+
   constructor(private route : Router) { }
 
   ngOnInit() {

@@ -9,6 +9,8 @@ import { map } from 'rxjs/operators';
 })
 export class AuthService {
 
+  /* TODO : documentação nos métodos */
+
   constructor(private http : InstaService) { }
 
   login(user : User){

@@ -10,6 +10,12 @@ import { PostService } from 'src/app/services/post.service';
 })
 export class ProfileComponent implements OnInit {
 
+  /* TODO: Documentar todos os métodos
+      TODO : Criar um método que ao ser clicado recebe um post do HTML
+      e coloca na variável currentPost, depois disso, dentro do modal
+      colocar um img com essa variável de currentPost
+  */
+
   constructor(private route : Router, private service: PostService) { }
 
     post : Post = new Post();

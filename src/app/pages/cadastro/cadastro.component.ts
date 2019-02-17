@@ -12,14 +12,17 @@ import { USER } from 'src/environments/endpoint';
 })
 export class CadastroComponent implements OnInit {
 
-  registerForms :FormGroup;
+  /* TODO : documentar os métodos
+     TODO : HTML, classes e ids todos em inglês e nomes genéricos
+  
+  */
 
+  registerForms :FormGroup;
   User : User = new User()
 
   constructor(private fb: FormBuilder, private request : InstaService, private route : Router) { }
 
   ngOnInit() {
-
     this.registerForms = this.fb.group({
       email: ['', Validators.compose([Validators.required, Validators.email])],
       nomeCompleto: ['',Validators.compose([Validators.required, Validators.minLength(4)])],
@@ -28,8 +31,9 @@ export class CadastroComponent implements OnInit {
     });
   }
 
-  register(){
 
+  /* quero uma explicação do que está sendo feito aqui nesse método */
+  register(){
     let newUser = Object.assign({}, this.User, this.registerForms.getRawValue())
     if (this.registerForms.valid) {
       this.request.post(USER, newUser).toPromise().then(()=> {
