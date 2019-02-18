@@ -8,6 +8,9 @@ import { API_URL } from 'src/environments/endpoint';
 })
 export class RequestService {
 
+  /* TODO : comentar todos os méotodos trocar o nome do service */
+
+
   constructor( private http : HttpClient) { }
 
   get(ENDPOINT) : Observable<any>{

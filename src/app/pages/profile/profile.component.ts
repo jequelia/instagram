@@ -15,7 +15,9 @@ import { USER } from 'src/environments/endpoint';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor(private route: Router, private service: PostService, private request: RequestService, private auth: AuthService) { }
+  
+
+  constructor(private route : Router, private service: PostService) { }
 
 
   post: Post = new Post();

@@ -7,6 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
 import { AuthGuard } from './guards/auth.guard';
 
+/* TODO : aplicar guarda de rotas, assistir o vídeo de Loiane */
+
 const routes: Routes = [
   {path:'', redirectTo:"login", pathMatch:"full"},
   {path:'profile', component: ProfileComponent,
