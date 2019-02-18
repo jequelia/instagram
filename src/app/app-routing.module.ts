@@ -5,15 +5,20 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { LoginComponent } from './pages/login/login.component';
 
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   {path:'', redirectTo:"login", pathMatch:"full"},
-  {path:'profile', component: ProfileComponent,},
+  {path:'profile', component: ProfileComponent,
+    canActivate: [AuthGuard]},
   {path:'cadastro', component: CadastroComponent},
   {path:'login', component: LoginComponent},
   
-  {path:'editProfile', component: EditProfileComponent}
+  {path:'editProfile', component: EditProfileComponent,
+  canActivate: [AuthGuard]},
+
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

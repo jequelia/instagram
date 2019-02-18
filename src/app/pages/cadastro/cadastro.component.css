@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.cadastro{
+.register{
     display: flex;
     background: #fff;
     width: 30%;
@@ -74,7 +74,7 @@ p{
     height: 17%;
 }
 
-.divisa{
+.separate{
     margin: 10px 40px 18px;
     display: flex;
     flex-direction: row;
@@ -142,11 +142,11 @@ p{
         margin: 33% 0% 0% 0%;
     }
 
-    .cadastro {
+    .register {
         display: flex;
         background: #fff;
         width: 46%;
-        height: 58%;
+        height: 67%;
         align-items: center;
         justify-content: center;
         margin: -11% 0% 0% 5%;
@@ -178,7 +178,7 @@ p{
         color: #949698;
     }
 
-    .cadastro {
+    .register {
         display: flex;
     background: #fff;
     width: 91%;

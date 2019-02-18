@@ -6,7 +6,7 @@ import { API_URL } from 'src/environments/endpoint';
 @Injectable({
   providedIn: 'root'
 })
-export class InstaService {
+export class RequestService {
 
   constructor( private http : HttpClient) { }
 
@@ -22,4 +22,9 @@ export class InstaService {
   delete(ENDPOINT, id): Observable<any>{
     return this.http.delete(`${API_URL}${ENDPOINT}/${id}`);
   }
+
+  getById(endpoint : string, id : string) : Observable<any>{
+    return this.http.get(`${API_URL}${endpoint}/${id}`)
+  }
+
 }

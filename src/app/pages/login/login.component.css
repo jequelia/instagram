@@ -8,11 +8,11 @@
     align-items: center;
 }
 
-.cadastro{
+.login{
     display: flex;
     background: #fff;
     width: 27%;
-    height: 49%;
+    height: 59%;
     align-items: center;
     justify-content: center;
     margin: -11% 0% 0% 5%;
@@ -21,7 +21,7 @@
 }
 
 
-.login{
+.register{
     display: flex;
     background: #fff;
     width: 27%;
@@ -30,7 +30,7 @@
     justify-content: center;
     border: 1px solid #e6e6e6;
     position: absolute;
-    margin: 19% 0% 0% 0%;
+    margin: 21% 0% 0% 0%;
 }
 
 #facebook{
@@ -71,16 +71,16 @@ p{
     color: #949698;
 }
 
-#insta{
+#logoInsta{
     width: 50%;
     height: 17%;
 }
 
-#senha{
+#password{
     margin: 15% 0% 0% 26%;
 }
 
-.divisa{
+.separate{
     margin: 10px 17px 18px;
     display: flex;
     flex-direction: row;
@@ -142,35 +142,34 @@ h6{
 }
 
 .img1{
-
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
+/* comportamento da pagina alterada quando o tamanho dela por apartir de 1216 */
   @media screen and (max-width: 1216px) {
     div.img1 {
       display: none;
+    }
+
+    .register {
+        display: flex;
+        background: #fff;
+        width: 42%;
+        height: 11%;
+        align-items: center;
+        justify-content: center; 
+        border: 1px solid #e6e6e6;
+        position: absolute;
+        margin: 33% 0% 0% 0%;
     }
 
     .login {
         display: flex;
         background: #fff;
         width: 42%;
-        height: 11%;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #e6e6e6;
-        position: absolute;
-        margin: 33% 0% 0% 0%;
-    }
-
-    .cadastro {
-        display: flex;
-        background: #fff;
-        width: 42%;
-        height: 58%;
+        height: 72%;
         align-items: center;
         justify-content: center;
         margin: -11% 0% 0% 5%;
@@ -179,13 +178,13 @@ h6{
     }
 
 }
-
-    @media screen and (max-width: 416px) {
+/* comportamento da pagina alterada quando o tamanho dela por apartir de 450 */
+    @media screen and (max-width: 450px) {
         div.img1 {
           display: none;
         }
     
-        .login {
+        .register {
             display: flex;
             background: #fff;
             width: 83%;
@@ -197,7 +196,7 @@ h6{
             margin: 73% 0% 0% 0%;
         }
     
-        .cadastro {
+        .login {
             display: flex;
             background: #fff;
             width: 83%;

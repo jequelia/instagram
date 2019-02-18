@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-edit-profile',
@@ -10,13 +11,15 @@ export class EditProfileComponent implements OnInit {
 
   constructor(private route : Router) { }
 
+  name = new FormControl('');
+
   ngOnInit() {
   }
 
   
   click(){
-    this.route.navigate(["/profile"])
     
+    this.route.navigate(["/profile"])
   }
 
 }

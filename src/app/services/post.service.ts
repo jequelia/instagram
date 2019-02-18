@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Post } from 'models/post.model';
-import { InstaService } from './insta.service';
+
 import { POST } from 'src/environments/endpoint';
+import { RequestService } from 'src/app/services/request.service';
 
 
 @Injectable({
@@ -11,7 +12,7 @@ export class PostService {
 
   posts: Array<Post> = new Array<Post>();    //list of images 
 
-  constructor(private http: InstaService) { }
+  constructor(private http: RequestService) { }
 
   /**
    * Método que chama o service http e passa pra ele uma postagem, assim ele envia para o back 

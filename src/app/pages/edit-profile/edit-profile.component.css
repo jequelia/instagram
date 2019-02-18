@@ -14,7 +14,7 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    width: 79%;
+    width: 86%;
 }
 
 .flex-child{
@@ -83,7 +83,7 @@ img {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
-    width: 60%;
+    width: 50%;
 }
 
 @media screen and (max-width: 1216px) {
@@ -99,7 +99,7 @@ img {
 
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 784px) {
     .image {
         display: flex;
         align-content: center;
@@ -122,3 +122,4 @@ img {
     }
 
 }
+

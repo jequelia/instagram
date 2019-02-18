@@ -1,32 +1,18 @@
 {
   "user": [
     {
-      "email": "admm@adm",
-      "nomeCompleto": "admmm",
-      "nomeUsuario": "admmm",
-      "senha": "123456",
-      "id": ""
+      "email": "merlia@gmail.com",
+      "fullName": "Merlia Faustino Hellem",
+      "userName": "Merlia Faustino",
+      "password": "123456",
+      "id": "1ZFm2Gh"
     },
     {
-      "email": "adm@adm",
-      "nomeCompleto": "jeque lia",
-      "nomeUsuario": "sssssss",
-      "senha": "444444444444444444",
-      "id": "hMyKPd_"
-    },
-    {
-      "email": "lucas@maciel.com",
-      "nomeCompleto": "Lucas Maciel Gomes",
-      "nomeUsuario": "Lucas",
-      "senha": "lucas123",
-      "id": "zexJ4zT"
-    },
-    {
-      "email": "andrew@andrew.com",
-      "nomeCompleto": "andrew felipe",
-      "nomeUsuario": "andrew",
-      "senha": "123456",
-      "id": "UJ2J92W"
+      "email": "adm@adm.com",
+      "fullName": "admm admm",
+      "userName": "admm",
+      "password": "123456",
+      "id": "wtU3bpI"
     }
   ]
 }
